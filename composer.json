@@ -1,0 +1,29 @@
+{
+  "name": "wtf/httpcontroller",
+  "type": "package",
+  "version": "0.1.0",
+  "homepage": "http://www.matthewcameron.ca",
+  "license": "Copyright 2018, Matthew Cameron",
+  "description": "A PHP-SDK for Twitter Search API",
+  "keywords": ["wtf", "what the framework"],
+  "config": {
+    "sort-packages": true
+  },
+  "repositories": [
+    {
+      "type": "git",
+      "url": "https://osyris13@bitbucket.org/whattheframework/httpmessage.git"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "Wtf\\HttpController\\" : "src/",
+      "Wtf\\HttpController\\Tests\\" : "tests/"
+    }
+  },
+  "require": {
+    "psr/http-server-middleware": "^1.0",
+    "wtf/http_message": "^0.1.0",
+    "phpunit/phpunit": "7.0.2"
+  }
+}
